@@ -1,4 +1,8 @@
-# Website
+# N1netails Doc
+N1netails is an open-source project that provides practical alerts and monitoring for applications.
+
+Read the docs here:
+https://n1netails.com/
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
@@ -39,3 +43,17 @@ $ GIT_USER=n1netails npm run deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+## Deploy with gh-pages
+
+Deploy to gh-pages.
+
+Prepare docs for deployment:
+```bash
+npm run gh-pages:predeploy
+```
+
+Deploy to gh-pages:
+```bash
+npm run gh-pages:deploy
+```
