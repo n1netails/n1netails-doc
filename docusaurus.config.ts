@@ -10,15 +10,15 @@ const config: Config = {
   favicon: 'img/n1netails_icon_transparent.ico',
 
   // Set the production url of your site here
-  url: 'https://n1netails.com',
+  url: 'https://n1netails.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/n1netails-doc/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'n1netails', // Usually your GitHub org/user name.
-  projectName: 'n1netails-doc.github.io', // Usually your repo name.
+  projectName: 'n1netails-doc', // Usually your repo name.
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
