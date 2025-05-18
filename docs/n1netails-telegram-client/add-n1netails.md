@@ -6,12 +6,21 @@ sidebar_position: 2
 
 ## Install
 Install the telegram client by adding the following dependency:
+
+### Maven
 ```xml
 <dependency>
-    <groupId>com.n1ne</groupId>
+    <groupId>com.n1netails</groupId>
     <artifactId>n1netails-telegram-client</artifactId>
     <version>0.1.0</version>
 </dependency>
+```
+
+### Gradle
+```groovy
+dependencies {
+    implementation 'com.n1netails:n1netails-telegram-client:0.1.0'
+}
 ```
 
 ## Configure
