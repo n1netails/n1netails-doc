@@ -4,20 +4,115 @@ sidebar_position: 3
 
 # Add N1netails Client
 
-You have just learned the **basics of Docusaurus** and made some changes to the **initial template**.
+## Install
+Install the discord webhook client by adding the following dependency:
+```xml
+<dependency>
+    <groupId>com.n1ne</groupId>
+    <artifactId>n1netails-discord-webhook-client</artifactId>
+    <version>0.1.0</version>
+</dependency>
+```
 
-Docusaurus has **much more to offer**!
+## Configure
+Here is how you can configure the project for different frameworks
 
-Have **5 more minutes**? Take a look at **[versioning](../tutorial-extras/manage-docs-versions.md)** and **[i18n](../tutorial-extras/translate-your-site.md)**.
+### Spring Boot
+Add the following beans to your spring boot application:
 
-Anything **unclear** or **buggy** in this tutorial? [Please report it!](https://github.com/facebook/docusaurus/discussions/4610)
+```java
+import com.n1netails.n1netails.discord.api.DiscordWebhookClient;
+import com.n1netails.n1netails.discord.internal.DiscordWebhookClientImpl;
+import com.n1netails.n1netails.discord.service.WebhookService;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
-## What's next?
+@Configuration
+public class DiscordWebhookConfig {
 
-- Read the [official documentation](https://docusaurus.io/)
-- Modify your site configuration with [`docusaurus.config.js`](https://docusaurus.io/docs/api/docusaurus-config)
-- Add navbar and footer items with [`themeConfig`](https://docusaurus.io/docs/api/themes/configuration)
-- Add a custom [Design and Layout](https://docusaurus.io/docs/styling-layout)
-- Add a [search bar](https://docusaurus.io/docs/search)
-- Find inspirations in the [Docusaurus showcase](https://docusaurus.io/showcase)
-- Get involved in the [Docusaurus Community](https://docusaurus.io/community/support)
+    @Bean
+    public WebhookService webhookService() {
+        return new WebhookService();
+    }
+
+    @Bean
+    public DiscordWebhookClient discordWebhookClient(WebhookService service) {
+        return new DiscordWebhookClientImpl(service);
+    }
+}
+```
+
+### Java
+
+```java
+import com.n1netails.n1netails.discord.internal.DiscordWebhookClientImpl;
+import com.n1netails.n1netails.discord.service.WebhookService;
+
+WebhookService service = new WebhookService();
+DiscordWebhookClient client = new DiscordWebhookClientImpl(service);
+```
+
+## Use
+```java
+import com.n1netails.n1netails.discord.api.DiscordWebhookClient;
+import com.n1netails.n1netails.discord.internal.DiscordWebhookClientImpl;
+import com.n1netails.n1netails.discord.service.WebhookService;
+
+public class ExampleService {
+    private final DiscordWebhookClient webhookClient;
+
+    public ExampleService() {
+        this.webhookClient = new DiscordWebhookClientImpl(new WebhookService());
+    }
+
+    public void webhookExample(String content) {
+        WebhookMessage message = new WebhookMessage(content);
+        // replace with your discord webhook url
+        String webhookUrl = "https://discord.com/api/webhooks/xxx/yyy";
+        webhookClient.sendMessage(webhookUrl, message);
+    }
+}
+```
+
+## Customize Webhook Message
+Discord webhook resource:
+https://discord.com/developers/docs/resources/webhook
+
+Send customized webhooks by utilizing the n1netails Pojo's 
+- `WebhookMessage`
+- `Embed`
+  - `Footer`
+  - List of `EmbedField`
+
+Example:
+
+```java
+import com.n1netails.n1netails.discord.DiscordColor;
+import com.n1netails.n1netails.discord.api.DiscordWebhookClient;
+import com.n1netails.n1netails.discord.model.Embed;
+import com.n1netails.n1netails.discord.model.WebhookMessage;
+
+public class ExampleService {
+  private final DiscordWebhookClient webhookClient;
+
+  public ExampleService() {
+    this.webhookClient = new DiscordWebhookClientImpl(new WebhookService());
+  }
+
+  public void webhookExample(String content) {
+    Embed embed = new Embed();
+    embed.setTitle("Build Notification");
+    embed.setDescription("The build has succeeded ✅");
+    embed.setColor(DiscordColor.BLUE.getValue());
+
+    WebhookMessage msg = new WebhookMessage();
+    msg.setUsername("CI Bot");
+    msg.setContent("Deployment update");
+    msg.setEmbeds(List.of(embed));
+
+    // replace with your discord webhook url
+    String webhookUrl = "https://discord.com/api/webhooks/xxx/yyy";
+    webhookClient.sendMessage(webhookUrl, msg);
+  }
+}
+```

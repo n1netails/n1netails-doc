@@ -4,20 +4,74 @@ sidebar_position: 2
 
 # Add N1netails Client
 
-You have just learned the **basics of Docusaurus** and made some changes to the **initial template**.
+## Install
+Install the telegram client by adding the following dependency:
+```xml
+<dependency>
+    <groupId>com.n1ne</groupId>
+    <artifactId>n1netails-telegram-client</artifactId>
+    <version>0.1.0</version>
+</dependency>
+```
 
-Docusaurus has **much more to offer**!
+## Configure
+Here is how you can configure the project for different frameworks
 
-Have **5 more minutes**? Take a look at **[versioning](../tutorial-extras/manage-docs-versions.md)** and **[i18n](../tutorial-extras/translate-your-site.md)**.
+### Spring Boot
+Add the following beans to your spring boot application:
 
-Anything **unclear** or **buggy** in this tutorial? [Please report it!](https://github.com/facebook/docusaurus/discussions/4610)
+```java
+import com.n1netails.n1netails.telegram.api.TelegramClient;
+import com.n1netails.n1netails.telegram.internal.TelegramClientImpl;
+import com.n1netails.n1netails.telegram.service.BotService;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
-## What's next?
+@Configuration
+public class TelegramConfig {
 
-- Read the [official documentation](https://docusaurus.io/)
-- Modify your site configuration with [`docusaurus.config.js`](https://docusaurus.io/docs/api/docusaurus-config)
-- Add navbar and footer items with [`themeConfig`](https://docusaurus.io/docs/api/themes/configuration)
-- Add a custom [Design and Layout](https://docusaurus.io/docs/styling-layout)
-- Add a [search bar](https://docusaurus.io/docs/search)
-- Find inspirations in the [Docusaurus showcase](https://docusaurus.io/showcase)
-- Get involved in the [Docusaurus Community](https://docusaurus.io/community/support)
+    @Bean
+    public BotService botService() { 
+        return new BotService(); 
+    }
+
+    @Bean
+    public TelegramClient telegramClient(BotService service) {
+        return new TelegramClientImpl(service);
+    }
+}
+```
+
+### Java
+
+```java
+import com.n1netails.n1netails.telegram.internal.TelegramClientImpl;
+import com.n1netails.n1netails.telegram.service.BotService;
+
+BotService service = new BotService();
+TelegramClient client = new TelegramClientImpl(service);
+```
+
+## Use
+```java
+import com.n1netails.n1netails.telegram.api.TelegramClient;
+import com.n1netails.n1netails.telegram.internal.TelegramClientImpl;
+import com.n1netails.n1netails.telegram.service.BotService;
+
+public class ExampleService {
+    private final TelegramClient telegramClient;
+
+    public ExampleService() {
+        this.telegramClient = new TelegramClientImpl(new BotService());
+    }
+
+    public void telegramNotificationExample(String content) {
+        TelegramMessage telegramMessage = new TelegramMessage("N1netails Telegram Works!", false);
+        // replace with your telegram chat id
+        String chatId = "your-telegram-chat-id";
+        // replace with your telegram bot token
+        String botToken = "your-telegram-bot-token";
+        telegramClient.sendMessage(chatId, botToken, telegramMessage);
+    }
+}
+```
