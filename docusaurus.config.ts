@@ -99,6 +99,14 @@ const config: Config = {
               label: 'Tutorial',
               to: '/docs/intro',
             },
+            {
+              label: 'Discord Webhook Client',
+              to: '/docs/category/discord-webhook-client',
+            },
+            {
+              label: 'Telegram Client',
+              to: '/docs/category/telegram-client',
+            },
           ],
         },
         {
