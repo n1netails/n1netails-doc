@@ -12,7 +12,7 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Disdord Webhook Client',
+    title: 'Discord Webhook Client',
     imgSrc: require('/img/discord-webhook.png').default,
     description: (
       <>
