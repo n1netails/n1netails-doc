@@ -6,6 +6,8 @@ sidebar_position: 3
 
 ## Install
 Install the discord webhook client by adding the following dependency:
+
+### Maven
 ```xml
 <dependency>
     <groupId>com.n1netails</groupId>
