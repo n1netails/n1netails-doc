@@ -14,8 +14,8 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <img
-          src="/img/n1netails_icon_transparent.png"
-          alt="N1Netails Icon"
+          src="./img/n1netails_icon_transparent.png"
+          alt="N1netails Icon"
           style={{ width: 192, height: 192, marginBottom: 16 }}
         />
 
