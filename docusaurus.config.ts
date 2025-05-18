@@ -118,7 +118,7 @@ const config: Config = {
             //   to: '/blog',
             // },
             {
-              label: 'GitHub',
+              label: 'N1netails Doc GitHub',
               href: 'https://github.com/n1netails/n1netails-doc',
             },
           ],
