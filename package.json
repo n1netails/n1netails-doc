@@ -14,9 +14,7 @@
     "write-heading-ids": "docusaurus write-heading-ids",
     "typecheck": "tsc",
     "gh-pages:predeploy":"docusaurus build",
-    "gh-pages:deploy": "gh-pages -d build",
-    "gh-pages:start": "docusaurus start",
-    "gh-pages:build": "docusaurus build"
+    "gh-pages:deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@docusaurus/core": "3.7.0",
