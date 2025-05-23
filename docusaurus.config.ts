@@ -10,7 +10,7 @@ const config: Config = {
   favicon: 'img/n1netails_icon_transparent.ico',
 
   // Set the production url of your site here
-  url: 'https://n1netails.github.io',
+  url: 'https://n1netails.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
