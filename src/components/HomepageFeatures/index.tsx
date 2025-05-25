@@ -16,7 +16,7 @@ const FeatureList: FeatureItem[] = [
     imgSrc: require('/img/discord-webhook.png').default,
     description: (
       <>
-        A lightweight Java client for sending Discord webhooks.
+        Quickly integrate N1netails with your Discord server. Get instant notifications and follow the alert tail directly within your communication hub for immediate reaction.
       </>
     ),
   },
@@ -26,7 +26,7 @@ const FeatureList: FeatureItem[] = [
     imgSrc: require('/img/telegram-client.png').default,
     description: (
       <>
-        A lightweight Java client for sending telegram notifications using telegram bots.
+        Receive real-time alerts via Telegram. This lightweight client ensures you're always in the loop, allowing for swift responses to any event by following the alert's origin.
       </>
     ),
   },
@@ -36,7 +36,7 @@ const FeatureList: FeatureItem[] = [
     imgSrc: require('/img/more-to-come.png').default,
     description: (
       <>
-        Currently working on developing N1netails core, N1netails clients and the alert management interface..
+        We're actively developing the N1netails core for advanced alert correlation, smarter tail-following capabilities, and a comprehensive alert management interface. Get ready to react faster and more effectively!
       </>
     ),
   },

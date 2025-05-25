@@ -20,9 +20,9 @@ function HomepageHeader() {
         />
 
         <Heading as="h1" className="hero__title">
-          {siteConfig.title}
+          N1netails: React to Alerts in Real Time
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle">Don't just receive alerts, follow their trail. N1netails helps you pinpoint the source and react instantly.</p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
