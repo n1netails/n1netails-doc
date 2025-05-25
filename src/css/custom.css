@@ -36,3 +36,30 @@
 
   --docusaurus-highlighted-code-line-bg: rgba(240, 109, 15, 0.15);
 }
+
+/* Custom button styles */
+.button--secondary {
+  padding: 0.75rem 1.5rem; /* Adjusted padding */
+  border-radius: 8px; /* Slightly more rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: all 0.2s ease-in-out; /* Smooth transition for hover effects */
+  font-weight: 600; /* Bolder text */
+}
+
+.button--secondary:hover {
+  transform: translateY(-2px); /* Slight lift on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Ensure the hero button text color is legible */
+.hero__title + .hero__subtitle + div .button--secondary {
+  color: var(--ifm-color-primary-darkest); /* Ensure contrast against lighter button background */
+  background-color: var(--ifm-color-primary-lightest); /* Lighter background for the button */
+  border-color: var(--ifm-color-primary-dark); /* Border to match primary theme */
+}
+
+.hero__title + .hero__subtitle + div .button--secondary:hover {
+  background-color: var(--ifm-color-primary-lighter);
+  border-color: var(--ifm-color-primary-darker);
+  color: var(--ifm-color-primary-darkest);
+}
