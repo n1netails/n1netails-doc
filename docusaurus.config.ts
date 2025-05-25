@@ -69,7 +69,7 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/n1netails_icon_transparent.png',
     navbar: {
-      title: 'N1netails Doc',
+      title: 'N1netails',
       logo: {
         alt: 'N1netails Doc Logo',
         src: 'img/n1netails_icon_transparent.ico',
