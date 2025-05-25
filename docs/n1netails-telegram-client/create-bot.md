@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: Create Telegram Bot for N1netails Notifications
+description: Follow this guide to create a Telegram bot and obtain a bot token for N1netails, enabling real-time alert notifications via Telegram.
 ---
 
 # Create Telegram bot

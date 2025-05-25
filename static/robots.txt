@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://n1netails.com/sitemap.xml

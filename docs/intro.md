@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: Introduction to N1netails | Real-Time Alert Monitoring
+description: Learn about N1netails, an open-source alert monitoring and management tool. Understand its 'tail-following' concept for rapid issue diagnosis and root cause analysis.
 ---
 
 # N1netails Intro
