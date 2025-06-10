@@ -1,6 +1,6 @@
 {
-  "name": "n-1-netails-doc",
-  "version": "0.1.3",
+  "name": "n1netails-doc",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",

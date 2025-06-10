@@ -13,6 +13,15 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
+    title: 'Kuda',
+    imgSrc: require('/img/kuda_transparent.png').default,
+    description: (
+      <>
+        N1netails Kuda is a lightweight, plug-and-play Java library designed to help developers send structured alerts from their applications directly to the N1netails Alerting Platform. <Link to="/docs/n1netails-kuda/kuda-info">Learn how to set up N1netails Kuda.</Link>
+      </>
+    ),
+  },
+  {
     title: 'Discord Webhook Client',
     imgSrc: require('/img/discord-webhook.png').default,
     description: (

@@ -20,7 +20,7 @@ function HomepageHeader() {
           style={{ width: 192, height: 192, marginBottom: 16 }}
         />
 
-        <Heading as="h1" className="hero__title">
+        <Heading as="h1" className="hero__title" style={{ fontSize: '2rem', fontWeight: 700 }}>
           N1netails: React to Alerts in Real Time
         </Heading>
         <p className="hero__subtitle">Don't just receive alerts, follow their trail. N1netails helps you pinpoint the source and react instantly.</p>
