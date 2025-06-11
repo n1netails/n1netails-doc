@@ -23,7 +23,7 @@ up and using Kuda will be reveled later.
 
 ### Requirements
 Kuda should be setup alongside the N1netails core system but it can work without it as simple logging service for your application.
-Learn how to set up the core system here: [N1netails](https://github.com/n1netails/n1netails)
+Learn how to set up the core system here: [N1netails](https://github.com/n1netails/n1netails) or set up N1netails with the docker quickstart [Docker Quickstart](../n1netails/n1netails-docker-quickstart.md)
 
 ⚠️ Note: You can also use Kuda with your own custom service just make sure you have the following endpoint which will receive the tail alerts `/ninetails/alert` and a matching TailRequest POJO in your service.
 
