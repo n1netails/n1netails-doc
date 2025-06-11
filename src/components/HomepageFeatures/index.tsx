@@ -32,7 +32,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Discord Webhook Client',
-    imgSrc: require('/img/discord-webhook.png').default,
+    imgSrc: require('/img/discord_n1netails.png').default,
     description: (
       <>
         Bring N1netails alerts directly into your team's Discord server. Our webhook client enables instant notifications, allowing your team to see and react to alerts within your primary communication hub. Follow the 'alert tail' for rapid context and collaborative incident response. <Link to="/docs/n1netails-discord-webhook-client/create-webhook">Integrate N1netails with Discord for streamlined alert management.</Link>
@@ -42,7 +42,7 @@ const FeatureList: FeatureItem[] = [
   {
     title: 'Telegram Client',
     // Svg: require('@site/static/img/telegram-client.svg').default,
-    imgSrc: require('/img/telegram-client.png').default,
+    imgSrc: require('/img/telegram_n1netails.png').default,
     description: (
       <>
         Stay informed on the go with the N1netails Telegram Client. Receive real-time alert notifications directly on your Telegram app, ensuring you're aware of critical events anytime, anywhere. This lightweight client facilitates swift responses by providing immediate alert details and the ability to trace the issue's origin. <Link to="/docs/n1netails-telegram-client/create-bot">Set up Telegram alerts and never miss a critical event.</Link>
