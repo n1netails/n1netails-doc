@@ -12,6 +12,15 @@ type FeatureItem = {
 };
 
 const FeatureList: FeatureItem[] = [
+   {
+    title: 'N1netails',
+    imgSrc: require('/img/n1netails_icon_transparent.png').default,
+    description: (
+      <>
+        N1netails is an open-source project that provides practical alerts and monitoring for applications. If you're tired of relying on complex SIEM tools to identify issues — or if your application lacks any alerting at all — N1netails offers a straightforward way to gain clarity on problems affecting your applications. <Link to="/docs/n1netails/n1netails-info">Learn how to set up N1netails.</Link>
+      </>
+    ),
+  },
   {
     title: 'Kuda',
     imgSrc: require('/img/kuda_transparent.png').default,
