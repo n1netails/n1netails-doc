@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'N1netails',
   tagline: 'Follow the Alert Tail. React in Real Time.',
-  favicon: 'img/n1netails_icon_transparent.ico',
+  favicon: 'img/n1netails_icon_transparent.png',
 
   // Set the production url of your site here
   url: 'https://n1netails.com',
@@ -72,7 +72,7 @@ const config: Config = {
       title: 'N1netails',
       logo: {
         alt: 'N1netails Doc Logo',
-        src: 'img/n1netails_icon_transparent.ico',
+        src: 'img/n1netails_icon_transparent.png',
       },
       items: [
         {

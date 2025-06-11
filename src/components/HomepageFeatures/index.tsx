@@ -12,12 +12,21 @@ type FeatureItem = {
 };
 
 const FeatureList: FeatureItem[] = [
+   {
+    title: 'N1netails',
+    imgSrc: require('/img/n1netails_icon_transparent.png').default,
+    description: (
+      <>
+        N1netails is your open-source solution for straightforward application alert monitoring. Move beyond complex SIEM tools or basic logging with a system designed for clarity and actionable insights. N1netails provides customizable alert triggers, real-time notifications, and an intuitive dashboard to visualize application health, empowering you to proactively address issues and improve stability. <Link to="/docs/n1netails/n1netails-info">Discover N1netails and take control of your application monitoring.</Link>
+      </>
+    ),
+  },
   {
     title: 'Kuda',
     imgSrc: require('/img/kuda_transparent.png').default,
     description: (
       <>
-        N1netails Kuda is a lightweight, plug-and-play Java library designed to help developers send structured alerts from their applications directly to the N1netails Alerting Platform. <Link to="/docs/n1netails-kuda/kuda-info">Learn how to set up N1netails Kuda.</Link>
+        Integrate your Java applications seamlessly with N1netails using Kuda. This lightweight, plug-and-play library allows developers to send detailed, structured alerts directly to the N1netails platform. Simplify your alert instrumentation and ensure critical information from your Java services is captured efficiently. <Link to="/docs/n1netails-kuda/kuda-info">Get started with N1netails Kuda for robust Java application alerting.</Link>
       </>
     ),
   },
@@ -26,7 +35,7 @@ const FeatureList: FeatureItem[] = [
     imgSrc: require('/img/discord-webhook.png').default,
     description: (
       <>
-        Quickly integrate N1netails with your Discord server. Get instant notifications and follow the alert tail directly within your communication hub for immediate reaction. <Link to="/docs/n1netails-discord-webhook-client/create-webhook">Learn how to integrate with Discord.</Link>
+        Bring N1netails alerts directly into your team's Discord server. Our webhook client enables instant notifications, allowing your team to see and react to alerts within your primary communication hub. Follow the 'alert tail' for rapid context and collaborative incident response. <Link to="/docs/n1netails-discord-webhook-client/create-webhook">Integrate N1netails with Discord for streamlined alert management.</Link>
       </>
     ),
   },
@@ -36,7 +45,7 @@ const FeatureList: FeatureItem[] = [
     imgSrc: require('/img/telegram-client.png').default,
     description: (
       <>
-        Receive real-time alerts via Telegram. This lightweight client ensures you're always in the loop, allowing for swift responses to any event by following the alert's origin. <Link to="/docs/n1netails-telegram-client/create-bot">Learn how to set up Telegram alerts.</Link>
+        Stay informed on the go with the N1netails Telegram Client. Receive real-time alert notifications directly on your Telegram app, ensuring you're aware of critical events anytime, anywhere. This lightweight client facilitates swift responses by providing immediate alert details and the ability to trace the issue's origin. <Link to="/docs/n1netails-telegram-client/create-bot">Set up Telegram alerts and never miss a critical event.</Link>
       </>
     ),
   },
@@ -46,7 +55,7 @@ const FeatureList: FeatureItem[] = [
     imgSrc: require('/img/more-to-come.png').default,
     description: (
       <>
-        We're continuously enhancing N1netails! Expect advanced alert correlation, smarter tail-following, a comprehensive management interface, and more integrations soon. Stay tuned for powerful new ways to react to your alerts!
+        The N1netails ecosystem is constantly evolving. We are actively working on future enhancements including advanced alert correlation to reduce noise, AI-powered 'smarter' tail-following for deeper insights, a more comprehensive central management interface, and a wider range of integrations with popular services. Stay tuned as we roll out powerful new capabilities to elevate your alert monitoring experience!
       </>
     ),
   },
