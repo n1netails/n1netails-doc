@@ -13,6 +13,7 @@ N1netails is an open-source project that provides practical alerts and monitorin
 
 Ready to dive in? Here's how you can get N1netails working for you:
 
+*   **N1netails:** [Learn how to set up the N1netails project](./n1netails/n1netails-info.md) to receive alerts directly in your server.
 *   **Kuda:** [Learn how to set up N1netails Kuda](./n1netails-kuda/kuda-info.md) to receive alerts directly in your server.
 *   **Discord Users:** [Learn how to set up the Discord Webhook Client](./n1netails-discord-webhook-client/create-webhook.md) to receive alerts directly in your server.
 *   **Telegram Users:** [Follow our guide to create a Telegram Bot](./n1netails-telegram-client/create-bot.md) for real-time notifications.
