@@ -10,8 +10,6 @@ description: Information about the N1netails project.
   <img src="/img/n1netails_icon_transparent.png" alt="N1netails" width="300" />
 </div>
 
-[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](LICENSE)
-
 ## Alert Monitoring and Management
 N1netails is an open-source project that provides practical alerts and monitoring for applications. If you're tired of relying on complex SIEM tools 
 to identify issues — or if your application lacks any alerting at all — N1netails offers a straightforward way to gain 
