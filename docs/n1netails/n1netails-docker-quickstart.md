@@ -30,7 +30,7 @@ your-directory/
     └── init-ntail-schema.sql
 ```
 
-⚠️ Note: You can also clone this github repository to get the `docker-compose.yml` file and the initdb directory. [N1netails Project Github](https://github.com/n1netails/n1netails)
+⚠️ Note: You can also clone this github repository to get the `docker-compose.yml` file and the `initdb` directory that includes the `init-ntail-schema.sql` file. [N1netails Project Github](https://github.com/n1netails/n1netails)
 
 `init-ntail-schema.sql`
 ```sql
