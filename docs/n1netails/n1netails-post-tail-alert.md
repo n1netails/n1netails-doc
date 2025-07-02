@@ -83,8 +83,8 @@ curl -X POST http://localhost:9901/ninetails/alert \
     "description": "High latency observed",
     "details": "The read queries in the US-East cluster have been above 2s for over 5 minutes.",
     "timestamp": "2025-07-02T20:00:00Z",
-    "level": "HIGH",
-    "type": "latency",
+    "level": "ERROR",
+    "type": "SYSTEM_ALERT",
     "metadata": {
       "region": "us-east-1",
       "cluster": "db-primary",
