@@ -56,6 +56,8 @@ services:
       SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/n1netails
       SPRING_DATASOURCE_USERNAME: n1netails
       SPRING_DATASOURCE_PASSWORD: n1netails
+      N1NETAILS_PASSKEY_RELYING_PARTY_ID: localhost
+      N1NETAILS_PASSKEY_ORIGINS: http://localhost:8080,http://localhost:9900,http://localhost:9901,http://localhost:4200
   # N1neTails UI
   ui:
     image: shahidfo/n1netails-ui:latest
