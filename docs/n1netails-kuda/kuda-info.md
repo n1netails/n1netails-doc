@@ -30,12 +30,19 @@ Learn how to set up the core system here: [N1netails](https://github.com/n1netai
 Example Tail Request POJO:
 ```java
 public class KudaTailRequest {
+    // tail title
     private String title;
+    // add description about the tail alert
     private String description;
+    // place the exception stack trace in the `details` or any extra information that will help with identifying the issue or alert
     private String details;
+    // tail timestamp
     private Instant timestamp;
+    // tail level (ex. INFO, SUCCESS, WARN, ERROR, CRITICAL)
     private String level;
+    // tail type (ex. SYSTEM_ALERT)
     private String type;
+    // tail metadata (add information about the application in here)
     private Map<String, String> metadata;
 }
 ```
