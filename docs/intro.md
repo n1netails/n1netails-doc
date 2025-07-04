@@ -11,6 +11,8 @@ N1netails is an open-source project that provides practical alerts and monitorin
 
 ## Getting Started
 
+[N1netails Dashboard](https://app.n1netails.com)
+
 Ready to dive in? Here's how you can get N1netails working for you:
 
 *   **N1netails:** [Learn how to set up the N1netails project](./n1netails/n1netails-info.md) N1netails project Info.
