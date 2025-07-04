@@ -17,6 +17,8 @@ clarity on problems affecting your applications.
 
 N1netails aims to simplify the often complex landscape of application monitoring. Key features include customizable alert triggers, real-time notifications, and an intuitive dashboard for visualizing application health. By focusing on ease of use and quick setup, N1netails empowers developers to proactively identify and address issues before they impact users. This leads to improved application stability, reduced downtime, and more efficient debugging. Whether you're a solo developer or part of a larger team, N1netails provides the essential tools to keep your applications running smoothly.
 
+[N1netails Dashboard](https://app.n1netails.com)
+
 Read more about the N1netails project here. [N1netails Project Github](https://github.com/n1netails/n1netails)
 
 ## Contributing

@@ -6,10 +6,6 @@ description: Follow this guide to set up the N1netails project.
 
 # N1netails Docker Quickstart
 
-N1netails is an open-source project that provides practical alerts and monitoring for applications. If you're tired of relying on complex SIEM tools
-to identify issues — or if your application lacks any alerting at all — N1netails offers a straightforward way to gain
-clarity on problems affecting your applications.
-
 Run N1netails with docker.
 
 You can set up the N1netails docker images using the docker compose yaml. If you would like to learn more about customizing N1netails for your own set up start at the readme here. [N1netails Project Github](https://github.com/n1netails/n1netails)

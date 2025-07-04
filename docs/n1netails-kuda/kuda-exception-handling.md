@@ -18,8 +18,8 @@ import com.n1netails.n1netails.kuda.internal.TailConfig;
 public class ExampleService {
     
     public ExampleService() {
-        // You can configure this anywhere must be set once.
-        TailConfig.setApiUrl("http://localhost:9901");
+        // You can configure this anywhere must be set once. For localhost use http://localhost:9901
+        TailConfig.setApiUrl("https://app.n1netails.com");
         TailConfig.setN1neToken("79dd8985-2d85-4a22-bfa0-0d70e963d713");
         // enable kuda to handle Default Uncaught Exception Handler (optional)
         TailConfig.enableExceptionHandler();
