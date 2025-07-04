@@ -73,9 +73,10 @@ Sends a new alert to the N1netails API using a valid `N1ne-Token`.
 ---
 
 ## ✅ Example `curl` Request
+if you have n1netails running on your localhost you can replace `https://app.n1netails.com/ninetails/alert` with your local instance useually located at `http://localhost:9901/ninetails/alert`
 
 ```bash
-curl -X POST http://localhost:9901/ninetails/alert \
+curl -X POST https://app.n1netails.com/ninetails/alert \
   -H "Content-Type: application/json" \
   -H "N1ne-Token: YOUR_TOKEN_HERE" \
   -d '{
