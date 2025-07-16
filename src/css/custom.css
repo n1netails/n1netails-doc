@@ -53,13 +53,22 @@
 
 /* Ensure the hero button text color is legible */
 .hero__title + .hero__subtitle + div .button--secondary {
-  color: var(--ifm-color-primary-darkest); /* Ensure contrast against lighter button background */
-  background-color: var(--ifm-color-primary-lightest); /* Lighter background for the button */
-  border-color: var(--ifm-color-primary-dark); /* Border to match primary theme */
+  color: #ffffff; /* Ensure text is white and legible against the dark gradient */
+  background-image: linear-gradient(
+    to bottom,
+    var(--ifm-color-primary-light),
+    var(--ifm-color-primary-dark)
+  );
+  border: none; /* Remove border to keep the gradient clean */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
 }
 
 .hero__title + .hero__subtitle + div .button--secondary:hover {
-  background-color: var(--ifm-color-primary-lighter);
-  border-color: var(--ifm-color-primary-darker);
-  color: var(--ifm-color-primary-darkest);
+  transform: translateY(-3px); /* Slightly more lift on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+  background-image: linear-gradient(
+    to bottom,
+    var(--ifm-color-primary), /* Brighter gradient on hover */
+    var(--ifm-color-primary-darker)
+  );
 }
