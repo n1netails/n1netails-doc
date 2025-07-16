@@ -2,6 +2,7 @@ import type {ReactNode} from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import Link from '@docusaurus/Link';
+import HomepageQuickstart from '@site/src/components/HomepageQuickstart';
 import styles from './styles.module.css';
 
 type FeatureItem = {
@@ -79,6 +80,7 @@ export default function HomepageFeatures(): ReactNode {
   return (
     <section className={styles.features}>
       <div className="container">
+        <HomepageQuickstart />
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
