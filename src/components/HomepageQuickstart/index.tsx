@@ -6,7 +6,7 @@ import styles from './styles.module.css';
 
 const curlRequest = `curl -X POST https://app.n1netails.com/ninetails/alert \\
   -H "Content-Type: application/json" \\
-  -H "N1ne-Token: YOUR_TOKEN_HERE" \\
+  -H "N1ne-Token: $N1NETAILS_TOKEN" \\
   -d '{
     "title": "Database Alert",
     "description": "High latency observed",
@@ -25,17 +25,22 @@ export default function HomepageQuickstart(): ReactNode {
   return (
     <section className={styles.quickstart}>
       <div className="container">
-        <Heading as="h2">Developer Quickstart</Heading>
-        <p>
-          Get started with N1netails by sending your first alert. For more details, check out the{' '}
-          <Link to="/docs/n1netails/n1netails-post-tail-alert">
-            POST Tail Alert documentation
-          </Link>
-          .
-        </p>
-        <CodeBlock language="bash" title="Send a Test Alert">
-          {curlRequest}
-        </CodeBlock>
+        <div className={styles.quickstartInner}>
+          <div className={styles.text}>
+            <Heading as="h2">Developer Quickstart</Heading>
+            <p>
+              Get started with N1netails by sending your first alert. For more details, check out the{' '}
+              <Link to="/docs/n1netails/n1netails-post-tail-alert">
+                POST Tail Alert documentation
+              </Link>.
+            </p>
+          </div>
+          <div className={styles.code}>
+            <CodeBlock language="bash" title="Send Your First Tail Alert">
+              {curlRequest}
+            </CodeBlock>
+          </div>
+        </div>
       </div>
     </section>
   );
