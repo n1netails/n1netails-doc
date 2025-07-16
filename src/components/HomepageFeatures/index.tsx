@@ -81,21 +81,12 @@ export default function HomepageFeatures(): ReactNode {
   return (
     <section className={styles.features}>
       <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
-        </div>
+
         <div className={styles.ovrIntro}>
           <a href="/docs/quickstart">
             <div className={styles.ovrIntroText}>
               <div className="mb-2 flex items-center text-base font-medium">
                 Developer quickstart
-                <div className={styles.pointer}>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                    <path fillRule="evenodd" d="M9.293 7.293a1 1 0 0 1 1.414 0l4 4a1 1 0 0 1 0 1.414l-4 4a1 1 0 0 1-1.414-1.414L12.586 12 9.293 8.707a1 1 0 0 1 0-1.414Z" clipRule="evenodd"></path>
-                  </svg>
-                </div>
               </div>
               <div className="text-sm text-text-default">Make your first API request in minutes. Learn the basics of the N1netails platform.</div>
               <div className="mt-4 flex items-center text-text-secondary">
@@ -156,6 +147,12 @@ export default function HomepageFeatures(): ReactNode {
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="row">
+          {FeatureList.map((props, idx) => (
+            <Feature key={idx} {...props} />
+          ))}
         </div>
       </div>
     </section>
