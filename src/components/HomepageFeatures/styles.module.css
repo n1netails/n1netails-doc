@@ -9,3 +9,53 @@
   height: 200px;
   width: 200px;
 }
+
+.ovrIntro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #282a36;
+  color: #f8f8f2;
+}
+
+.ovrIntroText {
+  padding: 1rem;
+}
+
+.pointer {
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+.codeSample {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.codeSampleHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #44475a;
+}
+
+.codeSampleTitle {
+  font-weight: 500;
+}
+
+.codeSampleBody {
+  padding: 1rem;
+  background-color: #282a36;
+}
+
+.codeSampleBodySmall {
+  font-size: 0.875rem;
+}
+
+.codeSampleBodyWithHeader {
+  border-top: 1px solid #44475a;
+}
