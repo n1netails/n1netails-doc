@@ -1,0 +1,37 @@
+.quickstart {
+  padding: 2rem 0;
+  text-align: left;
+}
+
+.quickstartInner {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.text {
+  flex: 1 1 auto;
+  max-width: 30%;
+}
+
+.code {
+  flex: 1 1 auto;
+  max-width: 70%;
+}
+
+@media (max-width: 768px) {
+  .text,
+  .code {
+    max-width: 100%;
+  }
+
+  .quickstartInner {
+    flex-direction: column;
+  }
+
+  .text h2,
+  .text p {
+    margin-bottom: 0.5rem;
+  }
+}
