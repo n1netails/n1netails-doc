@@ -62,6 +62,14 @@ spring:
     username: ${EMAIL_USERNAME:host-username}
     password: ${EMAIL_PASSWORD:host-password}
     from: ${EMAIL_SENDER:support@n1netails.com}
+    properties:
+      mail:
+        smtp:
+          auth: ${EMAIL_PROPERTIES_AUTH:false}
+          starttls.enable: ${EMAIL_PROPERTIES_STARTTLS_ENABLE:false}
+          connectiontimeout: 10000
+          timeout: 10000
+          writetimeout: 10000
 ```
 
 ## 4. **Send a test email**
