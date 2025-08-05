@@ -30,6 +30,11 @@ function HomepageHeader() {
             to="/docs/intro">
             Explore Documentation
           </Link>
+          <Link
+            className="button button--secondary button--lg"
+            to="https://app.n1netails.com/">
+            Go to Dashboard
+          </Link>
         </div>
       </div>
     </header>
