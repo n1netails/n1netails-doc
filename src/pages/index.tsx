@@ -26,14 +26,15 @@ function HomepageHeader() {
         <p className="hero__subtitle">Don't just receive alerts, follow the tail.</p>
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
+            className="button button--secondary button--md"
             to="/docs/intro">
             Explore Documentation
           </Link>
           <Link
-            className="button button--secondary button--lg"
+            className="button button--secondary button--md"
+            style={{ marginLeft: '5px' }}
             to="https://app.n1netails.com/">
-            Go to Dashboard
+            View Dashboard
           </Link>
         </div>
       </div>
