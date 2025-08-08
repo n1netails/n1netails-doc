@@ -121,6 +121,19 @@ const config: Config = {
               label: 'Discord',
               href: 'https://discord.gg/ma9CCw7F2x',
             },
+            {
+              label: 'Reddit',
+              href: 'https://www.reddit.com/r/n1netails'
+            },
+          ],
+        },
+        {
+          title: 'Contact',
+          items: [
+            {
+              label: 'support@n1netails.com',
+              href: 'mailto:support@n1netails.com',
+            },
           ],
         },
         {
