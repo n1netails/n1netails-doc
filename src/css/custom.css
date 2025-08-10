@@ -86,12 +86,13 @@
 
 .hero__title + .hero__subtitle + div .button--primary {
   background-color: #fff;
-  color: #050505;
-  border: 4px black;
+  color: black;
+  border: 2px solid black;
   transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .hero__title + .hero__subtitle + div .button--primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
