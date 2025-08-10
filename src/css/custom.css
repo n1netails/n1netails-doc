@@ -37,38 +37,61 @@
   --docusaurus-highlighted-code-line-bg: rgba(240, 109, 15, 0.15);
 }
 
-/* Custom button styles */
 .button--secondary {
-  padding: 0.75rem 1.5rem; /* Adjusted padding */
-  border-radius: 8px; /* Slightly more rounded corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  transition: all 0.2s ease-in-out; /* Smooth transition for hover effects */
-  font-weight: 600; /* Bolder text */
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+  font-weight: 600;
 }
 
 .button--secondary:hover {
-  transform: translateY(-2px); /* Slight lift on hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* Ensure the hero button text color is legible */
 .hero__title + .hero__subtitle + div .button--secondary {
-  color: #ffffff; /* Ensure text is white and legible against the dark gradient */
+  color: #ffffff;
   background-image: linear-gradient(
     to bottom,
     var(--ifm-color-primary-light),
     var(--ifm-color-primary-dark)
   );
-  border: none; /* Remove border to keep the gradient clean */
-  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  border: none;
+  transition: all 0.3s ease;
 }
 
 .hero__title + .hero__subtitle + div .button--secondary:hover {
-  transform: translateY(-3px); /* Slightly more lift on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   background-image: linear-gradient(
     to bottom,
-    var(--ifm-color-primary), /* Brighter gradient on hover */
+    var(--ifm-color-primary),
     var(--ifm-color-primary-darker)
   );
+}
+
+.button--primary {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+  font-weight: 600;
+}
+
+.button--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.hero__title + .hero__subtitle + div .button--primary {
+  background-color: #fff;
+  color: #050505;
+  border: 4px black;
+  transition: all 0.3s ease;
+}
+
+.hero__title + .hero__subtitle + div .button--primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
 }
