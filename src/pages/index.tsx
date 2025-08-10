@@ -21,20 +21,20 @@ function HomepageHeader() {
         />
 
         <Heading as="h1" className="hero__title" style={{ fontSize: '2rem', fontWeight: 700 }}>
-          N1netails: React to Alerts in Real Time
+          React to Alerts in Real Time
         </Heading>
         <p className="hero__subtitle">Don't just receive alerts, follow the tail.</p>
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--md"
+            className="button button--primary button--md"
             to="/docs/intro">
             Explore Documentation
           </Link>
           <Link
             className="button button--secondary button--md"
             style={{ marginLeft: '5px' }}
-            to="https://app.n1netails.com/">
-            View Dashboard
+            to="https://app.n1netails.com/#/register">
+            Sign Up
           </Link>
         </div>
       </div>
