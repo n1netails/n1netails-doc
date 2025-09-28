@@ -34,6 +34,16 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
+    title: 'Slack Client',
+    imgSrc: require('/img/slack_n1netails.png').default,
+    description: (
+      <>
+        Stay connected at work with the N1netails Slack Client.
+        <Link to="/docs/n1netails-slack-client/create-bot"> Set up Slack alerts.</Link>
+      </>
+    ),
+  },
+  {
     title: 'Discord Webhook Client',
     imgSrc: require('/img/discord_n1netails.png').default,
     description: (
@@ -57,7 +67,7 @@ const FeatureList: FeatureItem[] = [
   {
     title: 'Future Enhancements',
     // Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    imgSrc: require('/img/more-to-come.png').default,
+    imgSrc: require('/img/Fox_head1.png').default,
     description: (
       <>
         The N1netails ecosystem is constantly evolving. Stay tuned for new features!
