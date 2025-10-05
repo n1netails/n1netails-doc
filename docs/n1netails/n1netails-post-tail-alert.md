@@ -34,6 +34,7 @@ Sends a new alert to the N1netails API using a valid `N1ne-Token`.
 3. Select **Account Settings**.
 4. Navigate to **N1ne Token Manager** → **Create New Token**.
 5. Generate token by setting Token Name, Organization (default n1netails), Expriration Date (Optional).
+6. Save token value as it will not be available later.
 
 ### 🧾 Request Headers
 
