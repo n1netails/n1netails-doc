@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 title: Create Discord Webhook for N1netails Alerts
 description: Step-by-step guide to create a Discord webhook for integrating with N1netails, enabling real-time alert notifications in your Discord server.
 ---

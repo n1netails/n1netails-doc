@@ -34,6 +34,16 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
+    title: 'Teams Webhook Client',
+    imgSrc: require('/img/microsoft-teams.png').default,
+    description: (
+      <>
+        Stay connected at work with the N1netails Slack Client.
+        <Link to="/docs/n1netails-teams-webhook-client/create-webhook"> Integrate with Teams.</Link>
+      </>
+    ),
+  },
+  {
     title: 'Slack Client',
     imgSrc: require('/img/slack_n1netails.png').default,
     description: (
