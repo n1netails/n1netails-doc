@@ -6,7 +6,7 @@ description: Step-by-step guide to create a Teams webhook for integrating with N
 
 # Create Webhook
 
-## How to set up a team and channels
+## Requirements
 In order to use this webhook client you will need to have a Microsoft 365 Business account.
 
 ### Create teams webhook
