@@ -105,6 +105,14 @@ const config: Config = {
               to: '/docs/intro',
             },
             {
+              label: 'Teams Webhook Client',
+              to: '/docs/category/teams-webhook-client',
+            },
+            {
+              label: 'Slack Client',
+              to: '/docs/category/slack-client',
+            },
+            {
               label: 'Discord Webhook Client',
               to: '/docs/category/discord-webhook-client',
             },
