@@ -35,7 +35,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Teams Webhook Client',
-    imgSrc: require('/img/microsoft-teams.png').default,
+    imgSrc: require('/img/n1netails-microsoft-teams.png').default,
     description: (
       <>
         Stay connected at work with the N1netails Slack Client.
