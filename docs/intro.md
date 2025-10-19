@@ -17,5 +17,7 @@ Ready to dive in? Here's how you can get N1netails working for you:
 
 *   **N1netails:** [Learn how to set up the N1netails project](./n1netails/n1netails-info.md) N1netails project Info.
 *   **Kuda:** [Learn how to set up N1netails Kuda](./n1netails-kuda/kuda-info.md) send alerts to the N1netails project with Kuda.
+*   **Teams Users:** [Learn how to set up the Teams Webhook Client](./n1netails-teams-webhook-client/create-webhook.md) to receive alerts directory in your teams channel.
+*   **Slack Users:** [Learn how to set up the Slack Bot](./n1netails-slack-client/create-bot.md) for alerts on your slack channel.
 *   **Discord Users:** [Learn how to set up the Discord Webhook Client](./n1netails-discord-webhook-client/create-webhook.md) to receive alerts directly in your discord server.
 *   **Telegram Users:** [Follow our guide to create a Telegram Bot](./n1netails-telegram-client/create-bot.md) for real-time notifications.
