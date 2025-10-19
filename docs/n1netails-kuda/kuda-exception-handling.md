@@ -20,7 +20,8 @@ public class ExampleService {
     public ExampleService() {
         // You can configure this anywhere must be set once. For localhost use http://localhost:9901
         TailConfig.setApiUrl("https://app.n1netails.com");
-        TailConfig.setN1neToken("79dd8985-2d85-4a22-bfa0-0d70e963d713");
+        // Example token. You will need to generate your own token using the N1netails Dashboard
+        TailConfig.setN1neToken("n1_c7PNos3Nru2NLxVA6ANBbbJZsuJ5g8RVzZJhBpQjz5Hz7qrUB5yloRKjouRU9yzzGpbLhuZAS_ga0HQ_a7dLOQ");
         // enable kuda to handle Default Uncaught Exception Handler (optional)
         TailConfig.enableExceptionHandler();
     }
