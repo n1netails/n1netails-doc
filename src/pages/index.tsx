@@ -21,7 +21,7 @@ function HomepageHeader() {
         />
 
         <Heading as="h1" className="hero__title" style={{ fontSize: '2rem', fontWeight: 700 }}>
-          Real-Time Alert Management and Monitoring Tools
+          React to Alerts in Real Time
         </Heading>
         <p className="hero__subtitle">Don't just receive alerts, follow the tail.</p>
         <div className={styles.buttons}>
@@ -64,7 +64,7 @@ export default function Home(): ReactNode {
 
   return (
     <Layout
-      title="Real-Time Alert Management & Monitoring Tools"
+      title={`${siteConfig.title}`}
       description="N1netails provides powerful alert management and monitoring tools to help you streamline incident response. Integrate with Slack, Teams, Discord, and Telegram for real-time notifications.">
       <Head>
         <script type="application/ld+json">
