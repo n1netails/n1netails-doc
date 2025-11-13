@@ -1,0 +1,8 @@
+
+> n1netails-doc@0.3.4 start
+> docusaurus start
+
+
+ ------------------------------------------------------------------------------                                                                                                          Update available 3.9.1 → 3.9.2                                                                                                                 To upgrade Docusaurus packages with the latest version, run the                                       following command:                                        `npm i @docusaurus/core@latest @docusaurus/preset-classic@latest               @docusaurus/module-type-aliases@latest @docusaurus/tsconfig@latest                                  @docusaurus/types@latest`                                                                                                             ------------------------------------------------------------------------------
+
+[INFO] Starting the development server...
