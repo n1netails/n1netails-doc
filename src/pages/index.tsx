@@ -16,7 +16,7 @@ function HomepageHeader() {
       <div className="container">
         <img
           src="./img/n1netails_icon_transparent.png"
-          alt="N1netails Icon"
+          alt="N1netails Logo - Real-Time Alert Management and Monitoring Tools"
           style={{ width: 192, height: 192, marginBottom: 16 }}
         />
 
@@ -65,7 +65,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="N1netails offers real-time alert monitoring and management, helping you follow the trail of notifications, pinpoint sources instantly, and improve incident response. Get started now!">
+      description="N1netails provides powerful alert management and monitoring tools to help you streamline incident response. Integrate with Slack, Teams, Discord, and Telegram for real-time notifications.">
       <Head>
         <script type="application/ld+json">
           {JSON.stringify([organizationSchema, websiteSchema])}

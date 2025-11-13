@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'N1netails',
-  tagline: 'Follow the Alert Tail. React in Real Time.',
+  tagline: 'Real-Time Alert Management for Proactive Incident Response.',
   favicon: 'img/n1netails_icon_transparent.png',
 
   // Set the production url of your site here
@@ -66,6 +66,9 @@ const config: Config = {
   ],
 
   themeConfig: {
+    metadata: [
+      {name: 'keywords', content: 'alert management, monitoring tools, incident response, real-time alerts, Slack, Teams, Discord, Telegram'},
+    ],
     // Replace with your project's social card
     image: 'img/n1netails_icon_transparent.png',
     navbar: {
