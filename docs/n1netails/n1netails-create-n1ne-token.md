@@ -4,7 +4,7 @@ title: Create N1ne Token
 description: Learn how to create and configure a N1ne token used to send alerts to N1netails.
 ---
 
-# Create an N1netails N1ne Token
+# Create N1netails N1ne Token
 
 N1ne tokens are used to send Tail Alerts to the N1netails service. They can also be configured to deliver notifications to various platforms—including Email, Microsoft Teams, Slack, Discord, and Telegram.
 
