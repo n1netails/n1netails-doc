@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 title: Post Tail Alert to N1netails
 description: Follow this guide to learn how to send tail alerts to the N1netails API
 ---
@@ -25,31 +25,27 @@ The term **"tail"** in `n1netails` plays on two ideas:
 
 ### `POST /ninetails/alert`
 
-Sends a new alert to the N1netails API using a valid `N1ne-Token`.
+Send a new alert to the N1netails API using a valid `N1ne-Token`.  
+[Learn how to create a token →](./n1netails-create-n1ne-token)
 
-### 🔐 How to Get Your N1ne Token
+---
 
-1. Log in to the N1netails UI.
-2. Click your profile icon in the top-right corner.
-3. Select **Account Settings**.
-4. Navigate to **N1ne Token Manager** → **Create New Token**.
-5. Generate token by setting Token Name, Organization (default n1netails), Expriration Date (Optional).
-6. Save token value as it will not be available later.
+## 🧾 Request Headers
 
-### 🧾 Request Headers
+| Header Name     | Description                     | Required |
+|-----------------|---------------------------------|----------|
+| `N1ne-Token`    | Your unique alert API token     | ✅ Yes   |
+| `Content-Type`  | Must be `application/json`      | ✅ Yes   |
 
-| Header Name   | Description                  | Required |
-|---------------|------------------------------|----------|
-| `N1ne-Token`  | Your unique alert API token  | ✅ Yes   |
-| `Content-Type`| Must be `application/json`   | ✅ Yes   |
+---
 
-### 🧬 Request Body
+## 🧬 Request Body
 
 ```json
 {
   "title": "Tail Title",
   "description": "Tail Description",
-  "details": "Tail details (place stack trace/logs here)",
+  "details": "Tail details (stack trace/logs here)",
   "timestamp": "2025-07-02T20:00:00Z",
   "level": "ERROR",
   "type": "SYSTEM_ALERT",
@@ -61,15 +57,47 @@ Sends a new alert to the N1netails API using a valid `N1ne-Token`.
 }
 ````
 
-| Field         | Type              | Description                                                     |
-| ------------- | ----------------- | --------------------------------------------------------------- |
-| `title`       | `string`          | Short title for the alert                                       |
-| `description` | `string`          | One-line summary of the issue                                   |
-| `details`     | `string`          | Throwable stack trace or log data                               |
-| `timestamp`   | `ISO-8601 string` | When the issue was detected (UTC recommended)                   |
-| `level`       | `string`          | Alert severity (`INFO`, `SUCCESS`, `WARN`, `ERROR`, `CRITICAL`) |
-| `type`        | `string`          | Custom type/category for this alert                             |
-| `metadata`    | `object` (map)    | Additional key-value context for investigation                  |
+### Field Definitions
+
+| Field         | Type              | Description                                                                      |
+| ------------- | ----------------- | -------------------------------------------------------------------------------- |
+| `title`       | `string`          | Short, human-readable title for the alert                                        |
+| `description` | `string`          | One-line summary of the issue                                                    |
+| `details`     | `string`          | Stack trace, logs, or additional diagnostic information                          |
+| `timestamp`   | `ISO-8601 string` | When the issue was detected (UTC recommended)                                    |
+| `level`       | `string`          | Alert severity. Supported values: `INFO`, `SUCCESS`, `WARN`, `ERROR`, `CRITICAL` |
+| `type`        | `string`          | Classification/category of the alert (examples below)                            |
+| `metadata`    | `object`          | Additional context as key-value pairs (environment, region, host, etc.)          |
+
+---
+
+### 🧱 Supported Alert Types (Examples)
+
+You may use any string value for `type`, but here are common examples:
+
+* `SYSTEM_ALERT`
+* `USER_REPORT`
+* `SCHEDULED_MAINTENANCE`
+* `SECURITY_BREACH`
+* `PERFORMANCE_ISSUE`
+* `INTEGRATION_FAILURE`
+* `DATA_INCONSISTENCY`
+* `CONFIGURATION_CHANGE`
+* `DEPLOYMENT_EVENT`
+* `MONITORING_ALERT`
+
+**Success event examples:**
+
+* `SUCCESSFUL_DEPLOYMENT`
+* `USER_ACTION_COMPLETED`
+* `AUTOMATION_SUCCESS`
+* `DATA_SYNC_SUCCESS`
+* `BACKUP_COMPLETED`
+* `HEALTH_CHECK_PASSED`
+* `LOGIN_SUCCESS`
+* `PASSWORD_RESET_SUCCESS`
+* `SYSTEM_RECOVERY`
+* `SLA_MET`
 
 ---
 
