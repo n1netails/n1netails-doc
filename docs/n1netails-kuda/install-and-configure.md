@@ -10,7 +10,7 @@ Install the Kuda by adding the following dependency:
 <dependency>
     <groupId>com.n1netails</groupId>
     <artifactId>n1netails-kuda</artifactId>
-    <version>0.3.0</version>
+    <version>0.3.1</version>
 </dependency>
 ```
 
@@ -26,7 +26,7 @@ In order to get started with Kuda all you need to do is add the following three 
 // your n1netails-api location. For localhost use http://localhost:9901
 TailConfig.setApiUrl("https://app.n1netails.com");
 // your n1ne token (created by the n1netails user interface or api)
-TailConfig.setN1neToken("n1ne-token-uuid");
+TailConfig.setN1neToken("n1_n1ne-token");
 // send your first tail
 Tail.error("Testing kuda error").withTag("env", "prod").send();
 ```
