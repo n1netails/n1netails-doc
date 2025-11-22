@@ -172,6 +172,10 @@ This section lists all environment variables used across **N1netails API**, **N1
 - **API_BASE_URL** — Base URL of N1netails API (default: `http://localhost:9901`)
 
 ---
+### 📖 DOC Url
+- **API_DOC_URL** — (documentation url defaults to https://n1netails.com)
+
+---
 
 ### 🤖 AI Integration
 - **OPENAI_ENABLED** — Enable OpenAI integration (default: `false`)

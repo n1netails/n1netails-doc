@@ -13,9 +13,8 @@ N1ne tokens are used to send Tail Alerts to the N1netails service. They can also
 ## 🔐 How to Create Your N1ne Token
 
 1. Log in to the **N1netails UI**.
-2. Click your **profile icon** in the top-right corner.
-3. Select **Account Settings**.
-4. Go to **N1ne Token Manager** → **Create New Token**.
+2. Click the settings icon ⚙️ **gear icon** in the top-right corner.
+4. Go to **N1ne Token Manager** → **'+ Create Token'**.
 5. Fill in:
    - **Token Name**
    - **Organization** (default: `n1netails`)
