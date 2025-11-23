@@ -10,8 +10,15 @@ Install the teams webhook client by adding the following dependency:
 <dependency>
     <groupId>com.n1netails</groupId>
     <artifactId>n1netails-teams-webhook-client</artifactId>
-    <version>0.1.0</version>
+    <version>0.1.1</version>
 </dependency>
+```
+
+### Gradle
+```groovy
+dependencies {
+    implementation 'com.n1netails-teams-webhook-client:0.1.1'
+}
 ```
 
 ## Usage
