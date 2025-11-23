@@ -10,8 +10,15 @@ Install the Kuda by adding the following dependency:
 <dependency>
     <groupId>com.n1netails</groupId>
     <artifactId>n1netails-kuda</artifactId>
-    <version>0.3.1</version>
+    <version>0.3.2</version>
 </dependency>
+```
+
+### Gradle
+```groovy
+dependencies {
+    implementation 'com.n1netails:n1netails-kuda:0.3.2'
+}
 ```
 
 ## Configure
