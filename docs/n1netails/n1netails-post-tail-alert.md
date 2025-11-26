@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 3
 title: Post Tail Alert to N1netails
 description: Follow this guide to learn how to send tail alerts to the N1netails API
 ---
