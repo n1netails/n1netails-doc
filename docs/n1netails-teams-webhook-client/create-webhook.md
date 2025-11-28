@@ -29,5 +29,5 @@ You can confirm your workflow is set up correctly by going to the channel where 
 If configured correctly, it should look like the image below:
 
 <div align="center">
-  <img src="https://raw.github.com/n1netails/n1netails-teams-webhook-client/refs/heads/main/edit-webhook-workflow-setup.png" alt="N1ne Tails" width="500"/>
+  <img src="/img/communication-messages/edit-webhook-workflow-setup.png" alt="N1netails" width="500"/>
 </div>

@@ -12,14 +12,14 @@ Install the slack client by adding the following dependency:
 <dependency>
     <groupId>com.n1netails</groupId>
     <artifactId>n1netails-slack-client</artifactId>
-    <version>0.1.1</version>
+    <version>0.2.0</version>
 </dependency>
 ```
 
 ### Gradle
 ```groovy
 dependencies {
-    implementation 'com.n1netails:n1netails-slack-client:0.1.1'
+    implementation 'com.n1netails:n1netails-slack-client:0.2.0'
 }
 ```
 
@@ -61,3 +61,46 @@ public class Example {
     }
 }
 ```
+
+## Advanced Usage (Using Block Kit)
+You can also send more complex messages using [Slack's Block Kit](https://api.slack.com/block-kit).
+
+```java
+import com.n1netails.n1netails.slack.api.SlackClient;
+import com.n1netails.n1netails.slack.internal.SlackClientImpl;
+import com.n1netails.n1netails.slack.model.SlackMessage;
+import com.n1netails.n1netails.slack.service.BotService;
+import com.slack.api.model.block.Blocks;
+import com.slack.api.model.block.composition.BlockCompositions;
+
+import java.util.Arrays;
+
+public class AdvancedExample {
+    public static void main(String[] args) {
+        String token = "xoxb-your-bot-token";
+        String channel = "#prototype";
+
+        BotService botService = new BotService(token);
+        SlackClient slackClient = new SlackClientImpl(botService);
+
+        SlackMessage message = new SlackMessage();
+        message.setChannel(channel);
+        message.setText("This is a fallback message for notifications.");
+        message.setBlocks(Arrays.asList(
+                Blocks.section(section -> section.text(BlockCompositions.markdownText("*This is a message with blocks.*")))
+        ));
+
+        try {
+            slackClient.sendMessage(message);
+            System.out.println("Advanced message sent successfully!");
+        } catch (Exception e) {
+            System.err.println("Error sending message: " + e.getMessage());
+        }
+    }
+}
+```
+
+#### Example message output
+<div align="center">
+  <img src="/img/communication-messages/slack-message.png" alt="N1netails slack message" width="500"/>
+</div>
