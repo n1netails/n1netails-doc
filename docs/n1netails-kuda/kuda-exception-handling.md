@@ -22,8 +22,10 @@ public class ExampleService {
         TailConfig.setApiUrl("https://app.n1netails.com");
         // Example token. You will need to generate your own token using the N1netails Dashboard
         TailConfig.setN1neToken("n1_c7PNos3Nru2NLxVA6ANBbbJZsuJ5g8RVzZJhBpQjz5Hz7qrUB5yloRKjouRU9yzzGpbLhuZAS_ga0HQ_a7dLOQ");
-        // enable kuda to handle Default Uncaught Exception Handler (optional)
+        // (optional) enable kuda to handle Default Uncaught Exception Handler 
         TailConfig.enableExceptionHandler();
+        // (optional) set true if you would like verbose output for the Default Uncaught Exception Handler. Defaults to false
+        TailConfig.setVerbose(false);
     }
     
     public void defaultExceptionHandler() {
