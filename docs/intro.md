@@ -7,7 +7,7 @@ description: Discover N1netails, a powerful open-source tool for alert managemen
 # Introduction to N1netails
 
 ## Alert Monitoring and Management
-N1netails is an open-source alert management and monitoring tool designed to provide practical, real-time alerts for your applications. It introduces the concept of 'tail-following' – the ability to not just see an alert, but to trace its path and context. This helps you quickly understand the sequence of events and pinpoint the root cause of issues, improving your incident response time. If you're tired of relying on complex SIEM tools to identify issues — or if your application lacks any alerting at all — N1netails offers a straightforward way to gain clarity on problems affecting your applications.
+N1netails is an open-source alert management and monitoring tool designed to provide practical, real-time alerts for your applications. It introduces the concept of 'tail-following' – the ability to not just see an alert, but to trace its path and context. This helps you quickly understand the sequence of events and pinpoint the root cause of issues, improving your incident response time. If you're tired of relying on complex alerting and notification tools to identify issues — or if your application lacks any alerting at all — N1netails offers a straightforward way to gain clarity on problems affecting your applications.
 
 ## Getting Started
 

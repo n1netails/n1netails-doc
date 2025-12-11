@@ -11,7 +11,7 @@ description: Information about the N1netails project.
 </div>
 
 ## Alert Monitoring and Management
-N1netails is an open-source project that provides practical alerts and monitoring for applications. If you're tired of relying on complex SIEM tools 
+N1netails is an open-source project that provides practical alerts and monitoring for applications. If you're tired of relying on complex alerting and notification tools 
 to identify issues — or if your application lacks any alerting at all — N1netails offers a straightforward way to gain 
 clarity on problems affecting your applications.
 
