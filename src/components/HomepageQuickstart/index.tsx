@@ -4,10 +4,6 @@ import Heading from '@theme/Heading';
 import CodeBlock from '@theme/CodeBlock';
 import styles from './styles.module.css';
 
-import { GiFox } from 'react-icons/gi';
-import { FaTelegramPlane, FaDiscord, FaSlack, FaEnvelope } from 'react-icons/fa';
-// import { SiMicrosoft } from 'react-icons/si';
-
 const curlRequest = `curl -X POST https://app.n1netails.com/ninetails/alert \\
   -H "Content-Type: application/json" \\
   -H "N1ne-Token: $N1NETAILS_TOKEN" \\
@@ -208,12 +204,6 @@ export default function HomepageQuickstart(): ReactNode {
             <p className="text-lg mb-4">
               Join the path of the ninetailed fox and keep your apps safe with n1netails.
             </p>
-            {/* <Link
-              to="/docs/getting-started"
-              className="px-6 py-3 bg-red-500 text-white rounded hover:bg-red-600 transition"
-            >
-              Start Now
-            </Link> */}
 
             <Link
               className="button button--secondary button--md"
