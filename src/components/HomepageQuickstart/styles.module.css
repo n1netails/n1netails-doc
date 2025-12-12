@@ -45,7 +45,6 @@
   margin-top: 4rem;
   margin-bottom: 4rem;
   padding-top: 3rem;
-  /* padding-bottom: 3rem; */
 }
 
 /* Each Tail block wrapper */
@@ -57,8 +56,6 @@
   max-width: 900px;
   width: 100%;
   gap: 3rem;
-  /* margin-top: 2rem;
-  margin-bottom: 2rem; */
 }
 
 /* Mobile-friendly column layout */
