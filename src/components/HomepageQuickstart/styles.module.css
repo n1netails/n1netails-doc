@@ -35,3 +35,57 @@
     margin-bottom: 0.5rem;
   }
 }
+
+/* Kitsune Section Layout */
+.kitsuneSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding-top: 3rem;
+}
+
+/* Each Tail block wrapper */
+.kitsuneTail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+  max-width: 900px;
+  width: 100%;
+  gap: 3rem;
+}
+
+/* Mobile-friendly column layout */
+@media (max-width: 768px) {
+  .kitsuneTail {
+    width: 200px;
+    flex-direction: column !important;
+    text-align: center !important;
+  }
+}
+
+/* Alternating fox image positioning */
+.tailReverse {
+  flex-direction: row-reverse;
+}
+
+/* Fox images */
+.kitsuneImage {
+  width: 250px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Center icons and spacing */
+.platformIcons {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  font-size: 2.75rem;
+  margin-top: 2rem;
+}
