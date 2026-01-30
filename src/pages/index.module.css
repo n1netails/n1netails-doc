@@ -25,4 +25,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.pumpButton {
+  display: inline-flex;
+  align-items: center;
+  background-color: #00D084 !important;
+  border-color: #00D084 !important;
+  color: #ffffff !important;
+}
+
+.pumpButton:hover {
+  background-color: #00b870 !important;
+  border-color: #00b870 !important;
+}
+
+.pumpIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
 }
