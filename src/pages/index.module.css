@@ -32,6 +32,14 @@
 .pumpButton {
   display: inline-flex;
   align-items: center;
+  background-color: #00D084 !important;
+  border-color: #00D084 !important;
+  color: #ffffff !important;
+}
+
+.pumpButton:hover {
+  background-color: #00b870 !important;
+  border-color: #00b870 !important;
 }
 
 .pumpIcon {
