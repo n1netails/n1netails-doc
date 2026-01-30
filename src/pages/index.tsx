@@ -32,9 +32,14 @@ function HomepageHeader() {
           </Link>
           <Link
             className="button button--secondary button--md"
-            style={{ marginLeft: '5px' }}
             to="https://app.n1netails.com/#/register">
             Sign Up
+          </Link>
+          <Link
+            className={clsx('button button--secondary button--md', styles.pumpButton)}
+            to="https://pump.fun/coin/2Z6ygm5k6Gm4W9dgeDoc1dDSFpkLWp7wxo95DPszpump">
+            <img src="/img/pump-fun-logo.png" className={styles.pumpIcon} />
+            Buy on Pump Fun
           </Link>
         </div>
       </div>
