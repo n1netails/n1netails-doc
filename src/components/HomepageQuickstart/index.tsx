@@ -202,7 +202,7 @@ export default function HomepageQuickstart(): ReactNode {
           {/* CTA */}
           <div className="mt-14 text-center">
             <p className="text-lg mb-4">
-              Join the path of the ninetailed fox and keep your apps safe with n1netails.
+              Join the path of the ninetailed fox. Manage notifications and alerts with n1netails.
             </p>
 
             <Link
