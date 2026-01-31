@@ -136,6 +136,10 @@ const config: Config = {
               label: 'Reddit',
               href: 'https://www.reddit.com/r/n1netails'
             },
+            {
+              label: 'Telegram',
+              href: 'https://t.me/+PNSFOQAGmCZiZTIx'
+            },
           ],
         },
         {
@@ -161,6 +165,10 @@ const config: Config = {
             {
               label: 'N1netails Dashboard',
               href: 'https://app.n1netails.com/',
+            },
+            {
+              label: 'N1netails Fumi',
+              href: 'https://fumi.n1netails.com/',
             },
           ],
         },
