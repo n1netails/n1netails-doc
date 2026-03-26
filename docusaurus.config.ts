@@ -140,6 +140,18 @@ const config: Config = {
               label: 'Telegram',
               href: 'https://t.me/+PNSFOQAGmCZiZTIx'
             },
+            {
+              label: 'Twitter',
+              href: 'https://x.com/i/communities/2015206407365394735'
+            },
+            {
+              label: 'GitHub',
+              href: 'https://github.com/n1netails'
+            },
+            {
+              label: 'Pump.fun',
+              href: 'https://pump.fun/coin/2Z6ygm5k6Gm4W9dgeDoc1dDSFpkLWp7wxo95DPszpump'
+            }
           ],
         },
         {
