@@ -6,56 +6,74 @@ sidebar_position: 2
 
 ## Install
 Install the slack client by adding the following dependency:
-
-### Maven
 ```xml
 <dependency>
     <groupId>com.n1netails</groupId>
     <artifactId>n1netails-slack-client</artifactId>
-    <version>0.2.0</version>
+    <version>0.3.0</version>
 </dependency>
 ```
 
-### Gradle
+Gradle (Groovy)
 ```groovy
-dependencies {
-    implementation 'com.n1netails:n1netails-slack-client:0.2.0'
-}
+implementation 'com.n1netails:n1netails-slack-client:0.3.0'
 ```
 
 ## Usage
-Here's how to use the client to send a message:
+Here's how to use the client to send a message, pics or gifs:
 
 ```java
 import com.n1netails.n1netails.slack.api.SlackClient;
-import com.n1netails.n1netails.slack.internal.SlackClientImpl;
 import com.n1netails.n1netails.slack.model.SlackMessage;
-import com.n1netails.n1netails.slack.service.BotService;
+import com.n1netails.n1netails.slack.model.actions_element.ButtonElement;
+import com.n1netails.n1netails.slack.model.block.TextBlock;
+import com.n1netails.n1netails.slack.model.block.ImageBlock;
+import com.n1netails.n1netails.slack.model.block.GifBlock;
+import com.n1netails.n1netails.slack.model.block.ActionsBlock;
+import com.n1netails.n1netails.slack.model.element.ButtonElement;
+import com.n1netails.n1netails.slack.exception.SlackClientException;
 
 public class Example {
     public static void main(String[] args) {
         // Your bot token
         String token = "xoxb-your-bot-token";
 
-        // The channel you want to send the message to (e.g., "#general")
-        String channel = "#prototype"; // or "#channel-name"
+        // Channel to send the message to
+        String channel = "#prototype";
 
-        // Create the bot service
-        BotService botService = new BotService(token);
+        // Build the Slack client
+        SlackClient slackClient = SlackClient.builder()
+                .token(token)
+                .build();
 
-        // Create the Slack client
-        SlackClient slackClient = new SlackClientImpl(botService);
+        // Build an ActionsBlock
+        ActionsBlock actionsBlock = ActionsBlock.builder()
+                .addElement(ButtonElement.link("Visit Website", "https://example.com"))
+                .addElement(ButtonElement.builder().text("Click me").actionId("YOUR ACTION ID").build()) //Elements support 2 types of creation
+                .build();
 
-        // Create the message
-        SlackMessage message = new SlackMessage();
-        message.setChannel(channel);
-        message.setText("Hello from the N1ne Tails Slack Client!");
+        // Build the Slack message
+        SlackMessage message = SlackMessage.builder()
+                .channel(channel)
+                .text("New content 🚀") // fallback message for notifications
+                .addBlock(TextBlock.builder().text("New content 🚀").build())
+                .addBlock(ImageBlock.builder()
+                        .imageUrl("https://n1netails.com/img/n1netails_icon_transparent.png")
+                        .altText("N1netails token")
+                        .build())
+                .addBlock(ImageBlock.of("https://n1netails.com/img/quickstart/n1netails-letter.jpg", "N1netails letter")) //Blocks support 2 types of creation
+                .addBlock(GifBlock.builder()
+                        .gifUrl("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDRhOWtpMnVsM2NiMzJ4aXpoOXpuamZzcHpudG4zbzIzenVlaHN0eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xsE65jaPsUKUo/giphy.gif")
+                        .altText("Fox GIF")
+                        .build())
+                .addBlock(actionsBlock) // add the actions block with buttons
+                .build();
 
         try {
             // Send the message
             slackClient.sendMessage(message);
             System.out.println("Message sent successfully!");
-        } catch (Exception e) {
+        } catch (SlackClientException e) {
             System.err.println("Error sending message: " + e.getMessage());
         }
     }
@@ -67,33 +85,38 @@ You can also send more complex messages using [Slack's Block Kit](https://api.sl
 
 ```java
 import com.n1netails.n1netails.slack.api.SlackClient;
-import com.n1netails.n1netails.slack.internal.SlackClientImpl;
 import com.n1netails.n1netails.slack.model.SlackMessage;
-import com.n1netails.n1netails.slack.service.BotService;
 import com.slack.api.model.block.Blocks;
 import com.slack.api.model.block.composition.BlockCompositions;
+import com.n1netails.n1netails.slack.exception.SlackClientException;
 
-import java.util.Arrays;
+import java.util.List;
 
 public class AdvancedExample {
     public static void main(String[] args) {
         String token = "xoxb-your-bot-token";
         String channel = "#prototype";
 
-        BotService botService = new BotService(token);
-        SlackClient slackClient = new SlackClientImpl(botService);
+        // Build the Slack client
+        SlackClient slackClient = SlackClient.builder()
+                .token(token)
+                .build();
 
-        SlackMessage message = new SlackMessage();
-        message.setChannel(channel);
-        message.setText("This is a fallback message for notifications.");
-        message.setBlocks(Arrays.asList(
-                Blocks.section(section -> section.text(BlockCompositions.markdownText("*This is a message with blocks.*")))
-        ));
+        // Build a Slack message with custom Block Kit blocks
+        SlackMessage message = SlackMessage.builder()
+                .channel(channel)
+                .text("This is a fallback message for notifications.") // fallback
+                .addRawBlock(
+                        Blocks.section(section ->
+                                section.text(BlockCompositions.markdownText("*This is a message with custom blocks.*"))
+                        )
+                )
+                .build();
 
         try {
             slackClient.sendMessage(message);
             System.out.println("Advanced message sent successfully!");
-        } catch (Exception e) {
+        } catch (SlackClientException e) {
             System.err.println("Error sending message: " + e.getMessage());
         }
     }
@@ -102,5 +125,10 @@ public class AdvancedExample {
 
 #### Example message output
 <div align="center">
-  <img src="/img/communication-messages/slack-message.png" alt="N1netails slack message" width="500"/>
+  <img src="/img/communication-messages/slack-message.png" alt="N1netails slack message simple"/>
+</div>
+
+#### Example media output
+<div align="center">
+  <img src="/img/communication-messages/slack-media-message.png" alt="N1netails slack message simple" width="500"/>
 </div>
