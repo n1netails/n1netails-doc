@@ -169,6 +169,14 @@ const config: Config = {
               label: 'N1netails Doc GitHub',
               href: 'https://github.com/n1netails/n1netails-doc',
             },
+            {
+              label: 'N1netails Yokai',
+              href: 'https://yokai.n1netails.com/',
+            },
+            {
+              label: 'Tamamogram',
+              href: 'https://tamamogram.com/',
+            },
           ],
         },
       ],
