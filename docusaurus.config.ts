@@ -84,11 +84,6 @@ const config: Config = {
           position: 'left',
           label: 'Documentation',
         },
-        {
-          to: 'https://app.n1netails.com/',
-          label: 'Dashboard',
-          position: 'left',
-        },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/n1netails',
@@ -175,12 +170,12 @@ const config: Config = {
               href: 'https://github.com/n1netails/n1netails-doc',
             },
             {
-              label: 'N1netails Dashboard',
-              href: 'https://app.n1netails.com/',
+              label: 'N1netails Yokai',
+              href: 'https://yokai.n1netails.com/',
             },
             {
-              label: 'N1netails Fumi',
-              href: 'https://fumi.n1netails.com/',
+              label: 'Tamamogram',
+              href: 'https://tamamogram.com/',
             },
           ],
         },

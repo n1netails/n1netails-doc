@@ -16,8 +16,8 @@ import com.n1netails.n1netails.kuda.internal.TailConfig;
 public class ExampleService {
     
     public ExampleService() {
-        // You can configure this anywhere must be set once. For localhost use http://localhost:9901
-        TailConfig.setApiUrl("https://app.n1netails.com");
+        // You can configure this anywhere must be set once. Replace with your n1netails-api location.
+        TailConfig.setApiUrl("http://localhost:9901");
         // Example token provided. You will need to generate your own token using the N1netails Dashboard
         TailConfig.setN1neToken("n1_c7PNos3Nru2NLxVA6ANBbbJZsuJ5g8RVzZJhBpQjz5Hz7qrUB5yloRKjouRU9yzzGpbLhuZAS_ga0HQ_a7dLOQ");
     }

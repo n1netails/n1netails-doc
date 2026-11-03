@@ -4,7 +4,7 @@ import Heading from '@theme/Heading';
 import CodeBlock from '@theme/CodeBlock';
 import styles from './styles.module.css';
 
-const curlRequest = `curl -X POST https://app.n1netails.com/ninetails/alert \\
+const curlRequest = `curl -X POST http://localhost:9901/ninetails/alert \\
   -H "Content-Type: application/json" \\
   -H "N1ne-Token: $N1NETAILS_TOKEN" \\
   -d '{
@@ -208,7 +208,7 @@ export default function HomepageQuickstart(): ReactNode {
             <Link
               className="button button--secondary button--md"
               style={{ marginLeft: '5px' }}
-              to="https://app.n1netails.com/#/register">
+              to="/docs/n1netails/n1netails-docker-quickstart">
               Start Now
             </Link>
           </div>
