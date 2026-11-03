@@ -46,7 +46,9 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
 
 ## Deploy with gh-pages
 
-Deploy to gh-pages.
+Pushes to `main` automatically build the site, deploy it to the `gh-pages` branch, and create a `v<version>` tag using the version in `package.json`. Bump the package version in a pull request to create a new tag. If that version is already tagged, the deployment still runs and tag creation is skipped.
+
+To deploy manually:
 
 Prepare docs for deployment:
 ```bash

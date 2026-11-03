@@ -1,6 +1,6 @@
 {
   "name": "n1netails-doc",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
@@ -14,7 +14,7 @@
     "write-heading-ids": "docusaurus write-heading-ids",
     "typecheck": "tsc",
     "gh-pages:predeploy": "docusaurus build",
-    "gh-pages:deploy": "gh-pages -d build"
+    "gh-pages:deploy": "gh-pages -d build --repo https://github.com/n1netails/n1netails-doc.git"
   },
   "dependencies": {
     "@docusaurus/core": "^3.9.2",
