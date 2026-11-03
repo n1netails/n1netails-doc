@@ -32,8 +32,8 @@ function HomepageHeader() {
           </Link>
           <Link
             className="button button--secondary button--md"
-            to="https://app.n1netails.com/#/register">
-            Sign Up
+            to="/docs/n1netails/n1netails-docker-quickstart">
+            Get Started
           </Link>
           {/* <Link
             className={clsx('button button--secondary button--md', styles.pumpButton)}

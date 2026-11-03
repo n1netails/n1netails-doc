@@ -102,10 +102,10 @@ You may use any string value for `type`, but here are common examples:
 ---
 
 ## ✅ Example `curl` Request
-if you have n1netails running on your localhost you can replace `https://app.n1netails.com/ninetails/alert` with your local instance useually located at `http://localhost:9901/ninetails/alert`
+Replace `http://localhost:9901/ninetails/alert` with the location of your own N1netails instance if it is not running locally.
 
 ```bash
-curl -X POST https://app.n1netails.com/ninetails/alert \
+curl -X POST http://localhost:9901/ninetails/alert \
   -H "Content-Type: application/json" \
   -H "N1ne-Token: YOUR_TOKEN_HERE" \
   -d '{
